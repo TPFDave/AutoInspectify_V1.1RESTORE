@@ -1,0 +1,28 @@
+/* src/index.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global theme variables */
+:root {
+  --primary-color: #b91c1c; /* Default red */
+  --primary-color-hover: #991b1b;
+  --background-color: #ffffff;
+  --text-color: #1f2937;
+}
+
+[data-theme="dark"] {
+  --background-color: #1f2937;
+  --text-color: #f3f4f6;
+}
+
+/* Apply variables */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+a {
+  color: var(--primary-color);
+}
